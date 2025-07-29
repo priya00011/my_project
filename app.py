@@ -7,7 +7,7 @@ app = Flask(__name__)
 username = quote_plus("priyarallamadugu")
 password = quote_plus("priya@123")
 # MongoDB setup
-client = MongoClient(f"mongodb+srv://{priyarallamadugu}:{priya@123}@cluster1.mlzyz2j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
+client = MongoClient(f"mongodb+srv://{username}:{password}@cluster1.mlzyz2j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 db = client["todo_db"]
 todos = db["todos"]
 
